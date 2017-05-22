@@ -1,6 +1,6 @@
 # md-boilerplate
 
-Set up:
+Local set up:
 1. git clone https://github.com/torbjorndahlen/md-boilerplate.git
 2. npm install
 3. npm start

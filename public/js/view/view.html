@@ -1,0 +1,30 @@
+<div layout="column" class="cms-element">
+
+  <!-- top toolbar -->
+  <md-toolbar>
+    <div class="md-toolbar-tools cms-element">
+
+      <h2 flex md-truncate>Toolbar</h2>
+
+      <md-button class="md-icon-button" aria-label="Button" ng-click="toolbarButton()">
+        <md-icon md-svg-icon="img/ic_more_vert_18px.svg"></md-icon>
+      </md-button>
+
+    </div>
+  </md-toolbar> <!-- top toolbar -->
+
+  <!-- main content -->
+  <div layout="row" class="cms-element">
+
+    <div ui-view="sidenav">
+
+
+    </div> <!-- sidenav-->
+
+
+    <md-content class="cms-element">
+    </md-content>
+
+  </div>  <!-- main content -->
+
+</div>

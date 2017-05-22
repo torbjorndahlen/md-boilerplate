@@ -1,0 +1,26 @@
+
+    <md-sidenav
+
+      class="md-sidenav-left cms-element"
+      flex="none"
+      md-component-id="left"
+      md-is-locked-open="$mdMedia('gt-md')"
+      md-whiteframe="4"
+      >
+
+      <md-list>
+
+        <md-subheader class="md-no-sticky">Items</md-subheader>
+        <md-list-item
+          ng-repeat="item in items"
+          class="secondary-button-padding"
+          ng-click="doPrimaryAction($event, item)">
+          <md-icon md-svg-icon="{{item.icon}}"></md-icon>
+          <p> {{ item.name }} </p>
+          <md-divider></md-divider>
+        </md-list-item>
+
+      </md-list>
+
+
+    </md-sidenav>
