@@ -1,17 +1,9 @@
 <div layout="column" layout-align="center stretch" layout-fill layout-margin class="mdb-element-r">
 
   <!-- top toolbar -->
-  <md-toolbar flex>
-    <div class="md-toolbar-tools mdb-element-r">
-
-      <h2 flex md-truncate>Toolbar</h2>
-
-      <md-button class="md-icon-button" aria-label="Button" ng-click="toolbarButton($event)">
-        <md-icon md-svg-icon="img/ic_more_vert_18px.svg"></md-icon>
-      </md-button>
-
-    </div>
-  </md-toolbar> <!-- top toolbar -->
+  <div flex ui-view="toolbar">
+  </div>
+   <!-- top toolbar -->
 
   <div flex layout-gt-md="row" layout-fill layout-margin layout-padding class="mdb-element-r">
 

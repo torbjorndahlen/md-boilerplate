@@ -2,8 +2,8 @@
 'use strict';
 
 angular
-    .module('util', ['ui.router', 'ngMaterial'])
-    .service('utilService', ['$http',
+    .module('sidenav', ['ui.router', 'ngMaterial'])
+    .service('sidenavService', ['$http',
     function($http) {
 
     var service = {};

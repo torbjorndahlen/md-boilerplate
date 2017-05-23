@@ -2,9 +2,9 @@
 'use strict';
 
   angular
-  .module('util')
-  .controller('sidenavController', ['$mdToast', '$mdBottomSheet', '$mdSidenav', '$timeout', '$mdDialog','$rootScope', '$scope', '$state', '$sessionStorage', 'utilService',
-  function ($mdToast, $mdBottomSheet, $mdSidenav, $timeout, $mdDialog, $rootScope, $scope, $state, $sessionStorage, utilService){
+  .module('sidenav')
+  .controller('sidenavController', ['$mdToast', '$mdBottomSheet', '$mdSidenav', '$timeout', '$mdDialog','$rootScope', '$scope', '$state', '$sessionStorage', 'sidenavService',
+  function ($mdToast, $mdBottomSheet, $mdSidenav, $timeout, $mdDialog, $rootScope, $scope, $state, $sessionStorage, sidenavService){
 
 
     $scope.toggleLeft = buildDelayedToggler('left');

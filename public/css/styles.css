@@ -37,6 +37,13 @@
   border-width: 1px;
 }
 
+.mdb-element-dg {
+  border-style:solid;
+  border-color: #003300;
+  border-width: 1px;
+}
+
+
 md-icon.ng-scope {
   color: #c62828;
 }

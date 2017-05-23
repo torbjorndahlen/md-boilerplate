@@ -2,10 +2,11 @@
   'use strict';
 var cmsapp = angular.module('md-boilerplate', [
   'ui.router',
-  'util',
+  'sidenav',
   'list',
   'card',
   'analytics',
+  'toolbar',
   'view'
 ]);
 
@@ -34,8 +35,12 @@ cmsapp.config(function($stateProvider, $urlRouterProvider){
            templateUrl: "js/view/view.html",
            controller: "viewController"
          },
+         'toolbar@view': {
+           templateUrl: "js/toolbar/toolbar.html",
+           controller: "toolbarController"
+         },
          'sidenav@view': {
-           templateUrl: "js/util/sidenav.html",
+           templateUrl: "js/sidenav/sidenav.html",
            controller: "sidenavController"
          },
          'list@view': {
