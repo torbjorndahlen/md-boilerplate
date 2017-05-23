@@ -25,6 +25,18 @@
   border-width: 1px;
 }
 
+.mdb-element-t {
+  border-style:solid;
+  border-color: #00ffff;
+  border-width: 1px;
+}
+
+.mdb-element-m {
+  border-style:solid;
+  border-color: #ff00ff;
+  border-width: 1px;
+}
+
 md-icon.ng-scope {
   color: #c62828;
 }
@@ -32,3 +44,28 @@ md-icon.ng-scope {
 .mdb-card {
     max-width: 300px;
 }
+
+.mdb-whiteframe {
+  max-width: 300px;
+  max-height: 200px;
+  margin-left: 20px;
+  margin-right: 20px;
+}
+/*
+@media (max-width: 600px) {
+  .mdb-whiteframe {
+    min-height: 200px;
+  }
+}
+*/
+
+.mdb-whiteframe-container {
+    max-height: 250px;
+}
+/*
+@media (max-width: 600px) {
+  .mdb-whiteframe-container {
+    min-height: 750px;
+  }
+}
+*/

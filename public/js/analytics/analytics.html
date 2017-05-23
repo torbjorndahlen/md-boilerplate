@@ -1,0 +1,9 @@
+
+<md-whiteframe ng-repeat="item in items" flex class="md-whiteframe-24dp mdb-element-m mdb-whiteframe">
+  <img ng-src="{{item.icon}}" class="md-avatar" alt="{{item.name}}" />
+  <div layout="column">
+    <h3>{{ item.name }}</h3>
+    <h4 hide-xs>{{ item.what }}</h4>
+    <p hide-xs>{{ item.notes }}</p>
+  </div>
+  </md-whiteframe>
