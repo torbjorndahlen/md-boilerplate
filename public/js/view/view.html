@@ -1,30 +1,31 @@
-<div layout="column" class="cms-element">
+<div layout="column" layout-align="center stretch" layout-fill layout-margin class="mdb-element-r">
 
   <!-- top toolbar -->
-  <md-toolbar>
-    <div class="md-toolbar-tools cms-element">
+  <md-toolbar flex>
+    <div class="md-toolbar-tools mdb-element-r">
 
       <h2 flex md-truncate>Toolbar</h2>
 
-      <md-button class="md-icon-button" aria-label="Button" ng-click="toolbarButton()">
+      <md-button class="md-icon-button" aria-label="Button" ng-click="toolbarButton($event)">
         <md-icon md-svg-icon="img/ic_more_vert_18px.svg"></md-icon>
       </md-button>
 
     </div>
   </md-toolbar> <!-- top toolbar -->
 
-  <!-- main content -->
-  <div layout="row" class="cms-element">
+  <div flex layout-gt-md="row" layout-fill layout-margin layout-padding class="mdb-element-r">
 
-    <div ui-view="sidenav">
+  <!-- sidenav -->
+    <div flex flex-gt-md="20" layout-fill ui-view="sidenav" class="mdb-element-r">
+    </div>
+    <!-- sidenav-->
 
-
-    </div> <!-- sidenav-->
-
-
-    <md-content class="cms-element">
+    <!-- main content-->
+    <md-content flex class="mdb-element-r">
+      <h2>Content</h2>
     </md-content>
+    <!-- main content-->
 
-  </div>  <!-- main content -->
+  </div>
 
 </div>

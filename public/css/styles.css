@@ -1,9 +1,27 @@
 /*
 * For debugging
 */
-.cms-element {
+.mdb-element-r {
   border-style:solid;
-  border-color: #c62828;
+  border-color: #ff0000;
+  border-width: 1px;
+}
+
+.mdb-element-g {
+  border-style:solid;
+  border-color: #00ff00;
+  border-width: 1px;
+}
+
+.mdb-element-b {
+  border-style:solid;
+  border-color: #0000ff;
+  border-width: 1px;
+}
+
+.mdb-element-y {
+  border-style:solid;
+  border-color: #ffff00;
   border-width: 1px;
 }
 

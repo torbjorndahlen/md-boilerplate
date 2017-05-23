@@ -7,12 +7,14 @@
   function ($mdToast, $mdBottomSheet, $mdSidenav, $timeout, $mdDialog, $rootScope, $scope, $state, $sessionStorage, viewService){
 
 
-    $scope.toolbarButton = function(event, caller) {
+    $scope.toolbarButton = function(event) {
+
+      console.log("toolbarButton(" + event + ")");
 
       $mdDialog.show(
         $mdDialog.alert()
-        .title('Event: ' + event)
-        .textContent('Caller: ' + caller)
+        .title('Toolbar button')
+        .textContent('Toolbar button was clicked')
         .ariaLabel('Work in progress')
         .ok('Awesome!')
         .targetEvent(event)

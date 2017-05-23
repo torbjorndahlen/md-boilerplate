@@ -28,14 +28,15 @@ cmsapp.config(function($stateProvider, $urlRouterProvider){
        url: "/view",
        views: {
          '': {
-           templateUrl: "js/view/view.html"
+           templateUrl: "js/view/view.html",
+           controller: "viewController"
          },
          'sidenav@view': {
            templateUrl: "js/util/sidenav.html",
            controller: "sidenavController"
          }
-       },
-       controller: "viewController"
+       }
+
      });
 
    });
