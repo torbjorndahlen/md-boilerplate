@@ -28,3 +28,7 @@
 md-icon.ng-scope {
   color: #c62828;
 }
+
+.mdb-card {
+    max-width: 300px;
+}

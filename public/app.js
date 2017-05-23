@@ -3,6 +3,8 @@
 var cmsapp = angular.module('md-boilerplate', [
   'ui.router',
   'util',
+  'list',
+  'card',
   'view'
 ]);
 
@@ -34,6 +36,14 @@ cmsapp.config(function($stateProvider, $urlRouterProvider){
          'sidenav@view': {
            templateUrl: "js/util/sidenav.html",
            controller: "sidenavController"
+         },
+         'list@view': {
+           templateUrl: "js/list/list.html",
+           controller: "listController"
+         },
+         'card@view': {
+           templateUrl: "js/card/card.html",
+           controller: "cardController"
          }
        }
 
