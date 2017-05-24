@@ -1,9 +1,34 @@
 
-<md-whiteframe ng-repeat="item in items" flex class="md-whiteframe-24dp mdb-element-m mdb-whiteframe">
-  <img ng-src="{{item.icon}}" class="md-avatar" alt="{{item.name}}" />
-  <div layout="column">
-    <h3>{{ item.name }}</h3>
-    <h4 hide-xs>{{ item.what }}</h4>
-    <p hide-xs>{{ item.notes }}</p>
+<!--ng-repeat="item in items"-->
+<md-whiteframe flex class="md-whiteframe-24dp mdb-element-m mdb-whiteframe" layout="row" layout-align="start center">
+
+  <canvas id="myCanvas" class="mdb-element-m"></canvas>
+
+  <div layout="column" class="mdb-element-m">
+    <h3 hide-xs>{{ items[0].name }}</h3>
+    <h4 hide-xs>{{ items[0].what }}</h4>
+    <p hide-xs>{{ items[0].notes }}</p>
   </div>
-  </md-whiteframe>
+
+</md-whiteframe>
+
+<!--ng-repeat="item in items"-->
+<md-whiteframe flex class="md-whiteframe-24dp mdb-element-m mdb-whiteframe">
+<img ng-src="{{items[0].icon}}" class="md-avatar" alt="{{items[0].name}}" />
+
+<div layout="column">
+  <h3>{{ items[0].name }}</h3>
+  <h4 hide-xs>{{ items[0].what }}</h4>
+  <p hide-xs>{{ items[0].notes }}</p>
+</div>
+</md-whiteframe>
+
+<md-whiteframe flex class="md-whiteframe-24dp mdb-element-m mdb-whiteframe">
+<img ng-src="{{items[1].icon}}" class="md-avatar" alt="{{items[1].name}}" />
+
+<div layout="column">
+  <h3>{{ items[1].name }}</h3>
+  <h4 hide-xs>{{ items[1].what }}</h4>
+  <p hide-xs>{{ items[1].notes }}</p>
+</div>
+</md-whiteframe>

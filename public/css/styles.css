@@ -69,10 +69,34 @@ md-icon.ng-scope {
 .mdb-whiteframe-container {
     max-height: 250px;
 }
-/*
+
+
+canvas {
+  margin-left: 10px;
+  margin-right: auto;
+  max-width: 100px;
+  max-height: 100px;
+}
+
 @media (max-width: 600px) {
-  .mdb-whiteframe-container {
-    min-height: 750px;
+  canvas {
+    max-width: 50px;
+    max-height: 50px;
   }
 }
-*/
+
+/* Logo at toolbar */
+.mdb-img-left {
+  max-height:64px;
+  max-width: 30%;
+  margin-left:inherit;
+}
+
+
+@media (max-width: 600px) {
+  .mdb-img-left {
+    max-height:64px;
+    max-width: 100%;
+    margin-left:inherit;
+  }
+}
