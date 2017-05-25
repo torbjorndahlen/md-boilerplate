@@ -69,7 +69,7 @@ the text elements are hidden behind an icon.
 ![alt text](./img/analytics-xs.png "Analytics xs")
 
 ### Card
-The card component uses the AM `md-card`and it's parent uses `layout="row"` and `layout-wrap` to make the cards fill the parent space and create a new row when the first row is filled. The card elements has `flex="none"` to avoid shrinking or growing the cards when the widht of the screen changes. At screen sizes less than 600px the row changes into column.
+The card component uses the AM `md-card`and it's parent uses `layout="row"` and `layout-wrap` to make the cards fill the parent space and create a new row when the first row is filled. The card elements have `flex="none"` to avoid shrinking or growing the cards when the width of the screen changes. At screen sizes less than 600px the row changes into column.
 
 ![alt text](./img/card.png "Card")
 

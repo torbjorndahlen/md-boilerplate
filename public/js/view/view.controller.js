@@ -8,12 +8,12 @@
 
     // Decide which elements to show
     $scope.showToolbar = true;
-    $scope.showSidenav = true;
-    $scope.showAnalytics = true;
+    $scope.showSidenav = false;
+    $scope.showAnalytics = false;
     // The below are mutually exclusive
-    $scope.showCard = false;
+    $scope.showCard = true;
     $scope.showList = false;
-    $scope.showForm = true;
+    $scope.showForm = false;
 
     $scope.toolbarButton = function(event) {
 
