@@ -43,7 +43,7 @@ For screen sizes < 600px the layout changes to column.
 ![alt text](./img/toolbar-xs.png "Toolbar xs")
 
 #### Sidenav
-The sidenav is based on AM `md-sidenav`. It stays open at screen size gt-mg anc changes into a Toolbar with a menu on smaller screen sizes.
+The sidenav is based on AM `md-sidenav`. It stays open at screen size gt-mg and changes into a Toolbar with a menu on smaller screen sizes.
 
 ![alt text](./img/sidenav.png "Sidenav")
 
@@ -74,6 +74,16 @@ The list component uses the AM `md-list` with `<md-list-item class="md-3-line>` 
 
 #### Form
 TBW
+
+## Full UI
+The full UI looks as follows in gt-md:
+
+![alt text](./img/full-ui.png "Full UI")
+
+and in xs:
+
+![alt text](./img/full-ui-xs.png "Full UI xs")
+
 
 ## Deploy on RHMAP
 To deply the boilerplate on RHMAP do the following steps:

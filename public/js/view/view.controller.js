@@ -11,8 +11,8 @@
     $scope.showSidenav = true;
     $scope.showAnalytics = true;
     // The below are mutually exclusive
-    $scope.showCard = false;
-    $scope.showList = true;
+    $scope.showCard = true;
+    $scope.showList = false;
     $scope.showForm = false;
 
     $scope.toolbarButton = function(event) {
