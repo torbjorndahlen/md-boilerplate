@@ -85,6 +85,8 @@ For screen size xs the row layout changes to column.
 
 ![alt text](./img/form.png "Form")
 
+![alt text](./img/form-xs.png "Form xs")
+
 ## Full UI
 The full UI looks as follows in gt-md:
 
