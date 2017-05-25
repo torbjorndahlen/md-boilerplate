@@ -107,7 +107,7 @@
           $mdDialog.show(
             $mdDialog.alert()
             .title('Not implemented yet!')
-            .textContent('Try chat or contacts')
+            .textContent('Try something else')
             .ariaLabel('Work in progress')
             .ok('Awesome!')
             .targetEvent(event)
