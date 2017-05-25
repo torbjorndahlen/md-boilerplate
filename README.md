@@ -127,3 +127,6 @@ To deploy the boilerplate on RHMAP do the following steps:
 By using a modular UI framework responsive mobile app user interfaces can be quickly created.
 By combining different modules several applications can be created by reusing common components.
 This provides a good starting point for developing B2E and B2C apps on Red Hat MAP.
+
+## Credits
+Brid Mackay at Red Hat Mobile Consulting who provided lots of input to the creation of this layout.
