@@ -104,6 +104,10 @@ or with a form:
 
 ![alt text](./img/full-ui-form.png "Full UI Form")
 
+After removing borders:
+
+![alt text](./img/no-borders-ipad.png "No borders")
+
 ## Deploy on RHMAP
 To deploy the boilerplate on RHMAP do the following steps:
 ```
