@@ -56,14 +56,14 @@ the text elements are hidden behind an icon.
 ![alt text](./img/analytics-xs.png "Analytics xs")
 
 #### Card
-The card component uses the AM `md-card`and it's parent uses `layout="row"` and `layout-wrap` to make the cards fill the parent space and create a new row when the first row is filled. At screen sizes less than 600px the row changes into column.
+The card component uses the AM `md-card`and it's parent uses `layout="row"` and `layout-wrap` to make the cards fill the parent space and create a new row when the first row is filled. The card elements has `flex="none" to avoid shrinking or growing the cards when the widht of the screen changes. At screen sizes less than 600px the row changes into column.
 
 ![alt text](./img/card.png "Card")
 
 #### List
-The list component uses the AM `md-list`. At screen sizes less than 600px the row changes into column.
+The list component uses the AM `md-list` with `<md-list-item class="md-3-line>` to fit three lines of text in each row.
 
-![alt text](./img/list.png "List")
+![alt text](./img/list-xs.png "List")
 
 
 #### Form
