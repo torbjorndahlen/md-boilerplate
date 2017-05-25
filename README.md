@@ -84,6 +84,9 @@ and in xs:
 
 ![alt text](./img/full-ui-xs.png "Full UI xs")
 
+or with a list:
+
+![alt text](./img/full-ui-list.png "Full UI List")
 
 ## Deploy on RHMAP
 To deply the boilerplate on RHMAP do the following steps:
