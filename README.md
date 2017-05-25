@@ -37,8 +37,8 @@ it.
 The modules can be added independently to the Main View in order to create multiple views with the same components.
 The main modules are Card, List and Form that consitutes the main area of the view.
 These are mutually exclusive however they can be mapped to different states in the mobile app
-and hence provide three different layouts using the same modules.
-The Toolbar, Analytics and Sidenav are reusable modules that can be included i all three different main views.
+and hence provide three different views using the same modules, that could be navigated.
+The Toolbar, Analytics and Sidenav are reusable modules that can be included i all three different views.
 
 ### Toolbar
 The toolbar component has a row layout and consists of an md-toolbar element and an image where a company logo can be placed.
