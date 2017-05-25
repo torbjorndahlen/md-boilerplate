@@ -118,3 +118,8 @@ To deploy the boilerplate on RHMAP do the following steps:
 9. Deploy the Cloud App
 10. Use the link to the Cloud App to access the mobile app
 ```
+
+## Summary
+By using a modular UI framework responsive mobile app user interfaces can be quickly created.
+By combining different modules several applications can be created by reusing common components.
+This provides a good starting point for developing B2E and B2C apps on Red Hat MAP.
