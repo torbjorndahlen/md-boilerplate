@@ -50,15 +50,15 @@ For screen sizes < 600px the layout changes to column.
 ![alt text](./img/toolbar-xs.png "Toolbar xs")
 
 ### Sidenav
-The sidenav is based on AM `md-sidenav`. It stays open at screen size gt-mg and changes into a Toolbar with a menu on smaller screen sizes.
+The sidenav is based on AM `md-sidenav`. It stays open at screen size gt-md and changes into a Toolbar with a menu on smaller screen sizes.
 
 ![alt text](./img/sidenav.png "Sidenav")
 
 ![alt text](./img/sidenav-xs.png "Sidenav xs")
 
 ### Analytics
-The analytics component is based on the AM `md-whiteframe`. It consists of a canvas where a piechart is drawn.
-The text area elements contains the flex attribute in order for them to fill all space to the right of the canvas
+The analytics component is based on the AM `md-whiteframe`. It consists of a `canvas` where a piechart is drawn.
+The text area elements contains the `flex` attribute in order for them to fill all space to the right of the canvas
 which in turn has a fixed size. Note that `document.getElementById` doesn't work with elements inside `ng-repeat`.
 
 ![alt text](./img/analytics.png "Analytics")
@@ -69,18 +69,21 @@ the text elements are hidden behind an icon.
 ![alt text](./img/analytics-xs.png "Analytics xs")
 
 ### Card
-The card component uses the AM `md-card`and it's parent uses `layout="row"` and `layout-wrap` to make the cards fill the parent space and create a new row when the first row is filled. The card elements has `flex="none" to avoid shrinking or growing the cards when the widht of the screen changes. At screen sizes less than 600px the row changes into column.
+The card component uses the AM `md-card`and it's parent uses `layout="row"` and `layout-wrap` to make the cards fill the parent space and create a new row when the first row is filled. The card elements has `flex="none"` to avoid shrinking or growing the cards when the widht of the screen changes. At screen sizes less than 600px the row changes into column.
 
 ![alt text](./img/card.png "Card")
 
 ### List
-The list component uses the AM `md-list` with `<md-list-item class="md-3-line>` to fit three lines of text in each row.
+The list component uses the AM `md-list` with `<md-list-item class="md-3-line">` to fit three lines of text in each row.
 
 ![alt text](./img/list-xs.png "List")
 
 
 ### Form
-TBW
+The form uses a row layout to provide input fields.
+For screen size xs the row layout changes to column.
+
+![alt text](./img/form.png "Form")
 
 ## Full UI
 The full UI looks as follows in gt-md:
@@ -91,12 +94,16 @@ and in xs:
 
 ![alt text](./img/full-ui-xs.png "Full UI xs")
 
-or with a list:
+with a list:
 
 ![alt text](./img/full-ui-list.png "Full UI List")
 
+or with a form:
+
+![alt text](./img/full-ui-form.png "Full UI Form")
+
 ## Deploy on RHMAP
-To deply the boilerplate on RHMAP do the following steps:
+To deploy the boilerplate on RHMAP do the following steps:
 ```
 1. In App Studio go to Projects then choose Import.
 2. Create New Project
