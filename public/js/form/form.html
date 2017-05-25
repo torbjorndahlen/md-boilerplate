@@ -1,47 +1,44 @@
-<div layout="row" layout-align="start center" class="cms-red-titlebar">
-    <span flex="none" class="mdb-element-dp" layout-margin>
-    <md-icon class="md-secondary cms-back-arrow" ng-click="back()" aria-label="Back" md-svg-icon="img/ic_keyboard_backspace_24px.svg">
+<div layout="column" class="mdb-element-y">
+
+<div layout="row" layout-align="start center" class="mdb-element-y">
+    <span flex="none" class="mdb-element-y" layout-margin>
+    <md-icon class="md-secondary mdb-element-y" ng-click="back()" aria-label="Back" md-svg-icon="img/ic_keyboard_backspace_24px.svg">
     </md-icon>
   </span>
-    <span layout-margin layout-fill class="mdb-element-dp">
-    <h4>{{items[0].name}}</h4>
+    <span layout-margin layout-fill class="mdb-element-y">
+    <h4>Form name</h4>
   </span>
 </div>
 
-  <div layout-align="center center" class="cms-input-form">
+  <section layout="column" class="mdb-element-y"> <!-- form -->
+    <md-subheader class="md-primary mdb-element-y">Subject</md-subheader>
+    <md-content class="md-inline-form mdb-element-y">
+      <form name="form">
+        <div layout="row" layout-xs="column" class="mdb-element-y">
+          <md-input-container flex class="md-block mdb-element-y">
+            <label class="mdb-element-y">Name</label>
+            <input class="mdb-element-y" ng-model="name">
+          </md-input-container>
+          <md-input-container flex class="md-block mdb-element-y">
+            <label class="mdb-element-y">Mobile</label>
+            <input class="mdb-element-y" ng-model="mobile" type="tel">
+          </md-input-container>
+        </div>
+        <div layout="row" layout-xs="column" class="mdb-element-y">
+          <md-input-container flex class="md-block mdb-element-y">
+            <label class="mdb-element-y">Email</label>
+            <input class="mdb-element-y" ng-model="email" type="email">
+          </md-input-container>
+          <md-input-container flex class="md-block mdb-element-y">
+            <label class="mdb-element-y">Country</label>
+            <md-select class="mdb-element-y" ng-model="selectedCountry" md-selected-text="getSelectedCustomerCountry()">
+              <md-optgroup class="mdb-element-y" label="Countries">
+                <md-option class="mdb-element-y" ng-value="country" ng-repeat="country in countries">{{country}}</md-option>
+              </md-optgroup>
+            </md-select>
+          </md-input-container>
 
-  <section layout-fill> <!-- form -->
-    <md-subheader class="md-primary">Form</md-subheader>
-
-    <div class="md-inline-form">
-      <md-content flex-xs="100" layout-padding>
-        <div>
-          <form name="form">
-            <div layout="row" layout-xs="column">
-              <md-input-container class="md-block" flex flex-xs="100">
-                <label>Name</label>
-                <input ng-model="name">
-              </md-input-container>
-              <md-input-container class="md-block" flex flex-xs="100">
-                <label>Mobile</label>
-                <input ng-model="mobile" type="tel">
-              </md-input-container>
-            </div>
-            <div layout="row" layout-xs="column">
-              <md-input-container class="md-block" flex flex-xs="100">
-                <label>Email</label>
-                <input ng-model="email" type="email">
-              </md-input-container>
-              <md-input-container class="md-block" flex flex-xs="100">
-                <label>Country</label>
-                <md-select ng-model="selectedCountry" md-selected-text="getSelectedCustomerCountry()">
-                  <md-optgroup label="Countries">
-                    <md-option ng-value="country" ng-repeat="country in countries">{{country}}</md-option>
-                  </md-optgroup>
-                </md-select>
-              </md-input-container>
-
-              <md-autocomplete flex required
+          <md-autocomplete flex required
                 md-input-name="autocompleteField"
                 md-input-minlength="1"
                 md-input-maxlength="18"
@@ -51,26 +48,20 @@
                 md-items="item in querySearch(searchText)"
                 md-item-text="item.display"
                 md-require-match
-                md-floating-label="SSN">
-              <md-item-template>
-                <span md-highlight-text="searchText">{{item.display}}</span>
+                md-floating-label="SSN"
+                class="mdb-element-y">
+              <md-item-template class="mdb-element-y">
+                <span class="mdb-element-y" md-highlight-text="searchText">{{item.display}}</span>
               </md-item-template>
-            </md-autocomplete>
-
-            </div>
-          </form>
+          </md-autocomplete>
         </div>
-      </md-content>
-    </div>
+      </form>
+    </md-content>
+    </section> <!-- form -->
 
-</section> <!-- form -->
-
-<md-content flex-xs="100">
-  <section layout="row" layout-gt-md="row" layout-align="center center" layout-wrap>
-    <md-divider></md-divider>
-     <md-button flex-xs="100" ng-click="submit()" class="md-raised md-primary">Submit</md-button>
-     <md-button flex-xs="100" ng-click="cancel()" class="md-raised md-primary">Cancel</md-button>
- </section>
-</md-content>
-
-</div> <!-- input-form -->
+    <section class="mdb-element-y" layout="row" layout-gt-md="row" layout-align="center center" layout-wrap>
+      <md-divider></md-divider>
+        <md-button flex-xs="100" ng-click="submit()" class="md-raised md-primary mdb-element-y>Submit</md-button>
+        <md-button flex-xs="100" ng-click="cancel()" class="md-raised md-primary mdb-element-y>Cancel</md-button>
+    </section>
+</div>

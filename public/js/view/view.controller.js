@@ -12,8 +12,8 @@
     $scope.showAnalytics = true;
     // The below are mutually exclusive
     $scope.showCard = false;
-    $scope.showList = true;
-    $scope.showForm = false;
+    $scope.showList = false;
+    $scope.showForm = true;
 
     $scope.toolbarButton = function(event) {
 
