@@ -13,29 +13,14 @@
       { name: 'item3', icon: 'img/ic_chat_24px.svg', what: 'what3', notes: 'notes3', action1: 'action1', action2: 'action2' }
     ];
 
-    /*
-    var e = document.querySelector("#canvasArea");
-    var c = e.childNodes;
-    console.log("canvasArea child nodes: " + c.length);
-    for(var i = 0; i < c.length; i++) {
-      console.log("canvasArea child node[" + i + "].nodeName: " + c[i].nodeName);
-      console.log("canvasArea child node[" + i + "].nodeType: " + c[i].nodeType);
-      console.log("canvasArea child node[" + i + "].nodeValue: " + c[i].nodeValue);
-      console.log("canvasArea child node[" + i + "].string: " + c[i].toString());
-      console.log("canvasArea child node[" + i + "].id: " + c[i].id);
-    }
-    */
 
-    var myCanvas = document.getElementById("myCanvas"); //$window.document.createElement("canvas");
-    //c[0].appendChild(myCanvas);
-
-    //var myCanvas = c[0];
-    myCanvas.width = 100;
-    myCanvas.height = 100;
-    var ctx = myCanvas.getContext("2d");
+    var myCanvas0 = document.getElementById("myCanvas0");
+    myCanvas0.width = 100;
+    myCanvas0.height = 100;
+    var ctx0 = myCanvas0.getContext("2d");
 
 
-    $scope.dashData = {
+    $scope.dashData0 = {
         "Critical": 10,
         "Major": 14,
         "Normal": 2,
@@ -43,16 +28,66 @@
     };
 
 
-    $scope.myPiechart = new Piechart(
+    $scope.myPiechart0 = new Piechart(
     {
-        "canvas":myCanvas,
-        "data":$scope.dashData,
+        "canvas":myCanvas0,
+        "data":$scope.dashData0,
         "colors":["#fde23e","#f16e23", "#57d9ff","#937e88"],
-        "doughnutHoleSize":0.5
+        "doughnutHoleSize":0.9
     }
   );
 
-  $scope.myPiechart.draw();
+  $scope.myPiechart0.draw();
+
+  var myCanvas1 = document.getElementById("myCanvas1");
+  myCanvas1.width = 100;
+  myCanvas1.height = 100;
+  var ctx1 = myCanvas1.getContext("2d");
+
+
+  $scope.dashData1 = {
+      "Critical": 2,
+      "Major": 20,
+      "Normal": 5,
+      "Low": 10
+  };
+
+
+  $scope.myPiechart1 = new Piechart(
+  {
+      "canvas":myCanvas1,
+      "data":$scope.dashData1,
+      "colors":["#fde23e","#f16e23", "#57d9ff","#937e88"],
+      "doughnutHoleSize":0.9
+  }
+);
+
+$scope.myPiechart1.draw();
+
+var myCanvas2 = document.getElementById("myCanvas2");
+myCanvas2.width = 100;
+myCanvas2.height = 100;
+var ctx2 = myCanvas2.getContext("2d");
+
+
+$scope.dashData2 = {
+    "Critical": 2,
+    "Major": 35,
+    "Normal": 10,
+    "Low": 5
+};
+
+
+$scope.myPiechart2 = new Piechart(
+{
+    "canvas":myCanvas2,
+    "data":$scope.dashData2,
+    "colors":["#fde23e","#f16e23", "#57d9ff","#937e88"],
+    "doughnutHoleSize":0.9
+}
+);
+
+$scope.myPiechart2.draw();
 
 
   $scope.doPrimaryAction = function(event, caller) {

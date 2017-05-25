@@ -64,13 +64,6 @@ md-icon.ng-scope {
   margin-left: 20px;
   margin-right: 20px;
 }
-/*
-@media (max-width: 600px) {
-  .mdb-whiteframe {
-    min-height: 200px;
-  }
-}
-*/
 
 .mdb-whiteframe-container {
     max-height: 250px;
@@ -86,8 +79,10 @@ canvas {
 
 @media (max-width: 600px) {
   canvas {
-    max-width: 50px;
-    max-height: 50px;
+    max-width: 40px;
+    max-height: 40px;
+    margin-left: 0px;
+    margin-right: 0px;
   }
 }
 
