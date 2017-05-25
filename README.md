@@ -76,7 +76,7 @@ The list component uses the AM `md-list` with `<md-list-item class="md-3-line>` 
 TBW
 
 ## Full UI
-The full UI looks as follows in gt-md:
+The full UI looks as follows in > xs:
 
 ![alt text](./img/full-ui.png "Full UI")
 
