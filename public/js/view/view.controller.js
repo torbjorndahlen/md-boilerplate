@@ -12,7 +12,7 @@
     $scope.showAnalytics = true;
     // The below are mutually exclusive
     $scope.showCard = false;
-    $scope.showList = false;
+    $scope.showList = true;
     $scope.showForm = false;
 
     $scope.toolbarButton = function(event) {

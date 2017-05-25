@@ -9,7 +9,7 @@ Red: Main view
 Dark Green: Toolbar
 Green: Sidenav
 Magenta: Analytics
-Yellow: Card, List, Form These three are mutually exclusive.
+Yellow: Card, List, Form - These three are mutually exclusive.
 ```
 The different components can be shown or hidden by changing a corresponding scope variable in `view.controller.js`.
 This simplifies debugging problems in the layout.
@@ -56,10 +56,14 @@ the text elements are hidden behind an icon.
 ![alt text](./img/analytics-xs.png "Analytics xs")
 
 #### Card
+The card component uses the AM `md-card`and it's parent uses `layout="row"` and `layout-wrap` to make the cards fill the parent space and create a new row when the first row is filled. At screen sizes less than 600px the row changes into column.
 
-
+![alt text](./img/card.png "Card")
 
 #### List
+The list component uses the AM `md-list`. At screen sizes less than 600px the row changes into column.
+
+![alt text](./img/card.png "Card")
 
 
 #### Form
