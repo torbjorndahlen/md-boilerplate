@@ -33,7 +33,14 @@ it.
 
 ![alt text](./img/gt-md-row-layout.png "Row Layout")
 
-#### The toolbar
+## Modules
+The modules can be added independently to the Main View in order to create multiple views with the same components.
+The main modules are Card, List and Form that consitutes the main area of the view.
+These are mutually exclusive however they can be mapped to different states in the mobile app
+and hence provide three different layouts using the same modules.
+The Toolbar, Analytics and Sidenav are reusable modules that can be included i all three different main views.
+
+### Toolbar
 The toolbar component has a row layout and consists of an md-toolbar element and an image where a company logo can be placed.
 
 ![alt text](./img/toolbar.png "Toolbar")
@@ -42,14 +49,14 @@ For screen sizes < 600px the layout changes to column.
 
 ![alt text](./img/toolbar-xs.png "Toolbar xs")
 
-#### Sidenav
+### Sidenav
 The sidenav is based on AM `md-sidenav`. It stays open at screen size gt-mg and changes into a Toolbar with a menu on smaller screen sizes.
 
 ![alt text](./img/sidenav.png "Sidenav")
 
 ![alt text](./img/sidenav-xs.png "Sidenav xs")
 
-#### Analytics
+### Analytics
 The analytics component is based on the AM `md-whiteframe`. It consists of a canvas where a piechart is drawn.
 The text area elements contains the flex attribute in order for them to fill all space to the right of the canvas
 which in turn has a fixed size. Note that `document.getElementById` doesn't work with elements inside `ng-repeat`.
@@ -61,22 +68,22 @@ the text elements are hidden behind an icon.
 
 ![alt text](./img/analytics-xs.png "Analytics xs")
 
-#### Card
+### Card
 The card component uses the AM `md-card`and it's parent uses `layout="row"` and `layout-wrap` to make the cards fill the parent space and create a new row when the first row is filled. The card elements has `flex="none" to avoid shrinking or growing the cards when the widht of the screen changes. At screen sizes less than 600px the row changes into column.
 
 ![alt text](./img/card.png "Card")
 
-#### List
+### List
 The list component uses the AM `md-list` with `<md-list-item class="md-3-line>` to fit three lines of text in each row.
 
 ![alt text](./img/list-xs.png "List")
 
 
-#### Form
+### Form
 TBW
 
 ## Full UI
-The full UI looks as follows in > xs:
+The full UI looks as follows in gt-md:
 
 ![alt text](./img/full-ui.png "Full UI")
 
