@@ -114,5 +114,29 @@
           );
         }
 
+        $scope.submit = function() {
+          // go back to previous state
+          $mdDialog.show(
+            $mdDialog.alert()
+            .title('Not implemented yet!')
+            .textContent('Try something else')
+            .ariaLabel('Work in progress')
+            .ok('Awesome!')
+            .targetEvent(event)
+          );
+        }
+
+        $scope.cancel = function() {
+          // go back to previous state
+          $mdDialog.show(
+            $mdDialog.alert()
+            .title('Not implemented yet!')
+            .textContent('Try something else')
+            .ariaLabel('Work in progress')
+            .ok('Awesome!')
+            .targetEvent(event)
+          );
+        }
+
   }]);
 })();

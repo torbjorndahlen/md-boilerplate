@@ -1,6 +1,6 @@
-<div layout="column" class="mdb-element-y">
+<div flex layout="column" layout-align="none" class="mdb-element-y">
 
-<div layout="row" layout-align="start center" class="mdb-element-y">
+<div flex layout="row" layout-align="start center" class="mdb-element-y">
     <span flex="none" class="mdb-element-y" layout-margin>
     <md-icon class="md-secondary mdb-element-y" ng-click="back()" aria-label="Back" md-svg-icon="img/ic_keyboard_backspace_24px.svg">
     </md-icon>
@@ -10,7 +10,7 @@
   </span>
 </div>
 
-  <section layout="column" class="mdb-element-y"> <!-- form -->
+  <section flex layout="column" class="mdb-element-y"> <!-- form -->
     <md-subheader class="md-primary mdb-element-y">Subject</md-subheader>
     <md-content class="md-inline-form mdb-element-y">
       <form name="form">
@@ -59,9 +59,9 @@
     </md-content>
     </section> <!-- form -->
 
-    <section class="mdb-element-y" layout="row" layout-gt-md="row" layout-align="center center" layout-wrap>
+    <section flex class="mdb-element-y" layout="row" layout-gt-md="row" layout-align="center center" layout-wrap>
       <md-divider></md-divider>
-        <md-button flex-xs="100" ng-click="submit()" class="md-raised md-primary mdb-element-y>Submit</md-button>
-        <md-button flex-xs="100" ng-click="cancel()" class="md-raised md-primary mdb-element-y>Cancel</md-button>
+        <md-button ng-click="submit()" class="md-raised md-primary mdb-element-y">Submit</md-button>
+        <md-button ng-click="cancel()" class="md-raised md-primary mdb-element-y">Cancel</md-button>
     </section>
 </div>
