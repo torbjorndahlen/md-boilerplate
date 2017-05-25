@@ -76,10 +76,10 @@ To deply the boilerplate on RHMAP do the following steps:
 2. Create New Project
 3. Select Empty Project
 4. Select App Type = Cloud App
-5. Import från public git repo and use the link to this repo
+5. Import from public git repo and use the link to this repo: https://github.com/torbjorndahlen/md-boilerplate.git
 6. Create a connection tag which requires a Client App. Simply go to Projects and create a Hello World App in the project.
 7. Go to Connections and create a new Connection
 8. Select Configure and copy everything in the JSON object into the file fhconfig which is located under /public
 9. Deploy the Cloud App
 10. Use the link to the Cloud App to access the mobile app
-``
+```
