@@ -80,7 +80,7 @@ The list component uses the AM `md-list` with `<md-list-item class="md-3-line">`
 
 
 ### Form
-The form uses a row layout to provide input fields. Ia also provides a simple `md-autocomplete`.
+The form uses a row layout to provide input fields. It also provides a simple `md-autocomplete`.
 For screen size xs the row layout changes to column.
 
 ![alt text](./img/form.png "Form")
