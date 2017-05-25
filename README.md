@@ -4,11 +4,13 @@ In this demo I have used Angular Materal (below refered to as AM) and created a 
 certainly also be used for business related B2C apps.
 To make it easier to see the structure of the user interface elements, I have added a class with a different border color
 to the different modules as follows:
-`Red: Main view`
-`Dark Green`: Toolbar
-`Green: Sidenav`
-`Magenta: Analytics`
-`Yellow: Card, List, Form` These three are mutually exclusive.
+```
+Red: Main view
+Dark Green: Toolbar
+Green: Sidenav
+Magenta: Analytics
+Yellow: Card, List, Form These three are mutually exclusive.
+```
 The different components can be shown or hidden by changing a corresponding scope variable in `view.controller.js`.
 This simplifies debugging problems in the layout.
 
@@ -52,3 +54,12 @@ At screen widths of 600px or less the canvas size is reduced to 40% and
 the text elements are hidden behind an icon.
 
 ![alt text](./img/analytics-xs.png "Analytics xs")
+
+#### Card
+
+
+
+#### List
+
+
+#### Form
