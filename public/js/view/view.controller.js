@@ -6,6 +6,14 @@
   .controller('viewController', ['$mdToast', '$mdBottomSheet', '$mdSidenav', '$timeout', '$mdDialog','$rootScope', '$scope', '$state', '$sessionStorage', 'viewService',
   function ($mdToast, $mdBottomSheet, $mdSidenav, $timeout, $mdDialog, $rootScope, $scope, $state, $sessionStorage, viewService){
 
+    // Decide which elements to show
+    $scope.showToolbar = true;
+    $scope.showSidenav = true;
+    $scope.showAnalytics = true;
+    // The below are mutually exclusive
+    $scope.showCard = false;
+    $scope.showList = false;
+    $scope.showForm = false;
 
     $scope.toolbarButton = function(event) {
 
