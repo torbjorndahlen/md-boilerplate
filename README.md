@@ -63,7 +63,8 @@ The card component uses the AM `md-card`and it's parent uses `layout="row"` and 
 #### List
 The list component uses the AM `md-list`. At screen sizes less than 600px the row changes into column.
 
-![alt text](./img/card.png "Card")
+![alt text](./img/list.png "List")
 
 
 #### Form
+TBW
