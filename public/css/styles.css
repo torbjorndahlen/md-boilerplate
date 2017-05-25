@@ -43,6 +43,12 @@
   border-width: 1px;
 }
 
+.mdb-element-dp {
+  border-style:solid;
+  border-color: #000099;
+  border-width: 1px;
+}
+
 
 md-icon.ng-scope {
   color: #c62828;

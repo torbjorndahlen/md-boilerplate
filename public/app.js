@@ -7,6 +7,7 @@ var cmsapp = angular.module('md-boilerplate', [
   'card',
   'analytics',
   'toolbar',
+  'form',
   'view'
 ]);
 
@@ -54,6 +55,10 @@ cmsapp.config(function($stateProvider, $urlRouterProvider){
          'analytics@view': {
            templateUrl: "js/analytics/analytics.html",
            controller: "analyticsController"
+         },
+         'form@view': {
+           templateUrl: "js/form/form.html",
+           controller: "formController"
          }
        }
 
