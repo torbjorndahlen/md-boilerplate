@@ -42,6 +42,12 @@ For screen sizes < 600px the layout changes to column.
 
 ![alt text](./img/toolbar-xs.png "Toolbar xs")
 
+#### Sidenav
+The sidenav is based on AM `md-sidenav`. It stays open at screen size gt-mg anc changes into a Toolbar with a menu on smaller screen sizes.
+
+![alt text](./img/sidenav.png "Sidenav")
+
+![alt text](./img/sidenav-xs.png "Sidenav xs")
 
 #### Analytics
 The analytics component is based on the AM `md-whiteframe`. It consists of a canvas where a piechart is drawn.
