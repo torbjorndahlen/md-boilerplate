@@ -111,11 +111,18 @@ After removing borders:
 ![alt text](./img/no-borders-ipad.png "No borders")
 
 
-## Adding RHMAP SDK modules into a Cordova/AngularJS App
-The md-boilerplate can also be used to add RHMAP SDK modules into a Cordova/AngularJS app.
-Simply using a module with a corresponding controller for each RHMAP module, for example
-js/push/push.controller.js. The controller will initialize the RHMAP module when the
-parent scope is loaded.
+## RHMAP Push module
+The md-boilerplate can also be used to include the `$fh.push`API into a Cordova/AngularJS app.
+The push initialization is located in the `push` module under `public/js/push` and consists
+of a controller without a view that will register the device for RHMAP's push notification service.
+Note that in order to use push notifications the following additions must be made to the
+boilerplate:
+- Create a Cordova app copying the contents of the `m-boilerplate/public` directory to the `www` directory in the cordova app project.
+- Install the `aerogear-cordova-push`plugin with `cordova plugin add aerogear-cordova-push`. See [Aerogear for Cordova](https://aerogear.org/docs/guides/aerogear-cordova/AerogearCordovaPush/)
+- Build for Android or iOS (Note that the RHMAP Build Farm v.3.17 only supports iOS engine 4.2.0)
+- Register the device with the Push Notification Service. For iOS this requires an SSL certificate for APS. See [Aerogear for iOS](https://aerogear.org/docs/unifiedpush/aerogear-push-ios/)
+- Go to the Push menu in AppStudio and upload your credentials in order to register the app for push notifications
+
 
 ## Deploy on RHMAP
 To deploy the boilerplate on RHMAP do the following steps:
@@ -134,8 +141,8 @@ To deploy the boilerplate on RHMAP do the following steps:
 
 ## Summary
 By using a modular UI framework responsive mobile app user interfaces can be quickly created.
-By combining different modules several applications can be created by reusing common components.
-This provides a good starting point for developing B2E and B2C apps on Red Hat MAP.
+By combining different modules several applications can be created by reusing common components, including RHMAP frameworks such as `$fh.sync`and `$fh.push`.
+This provides a good starting point for quickly getting started developing B2E and B2C apps on Red Hat MAP.
 
 ## Credits
 To Brid Mackay at Red Hat Mobile Consulting who provided lots of input to the creation of this layout.
