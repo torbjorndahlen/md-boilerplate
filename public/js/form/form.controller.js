@@ -6,6 +6,8 @@
   .controller('formController', ['$q', '$mdToast', '$mdBottomSheet', '$mdSidenav', '$timeout', '$mdDialog','$rootScope', '$scope', '$state', '$sessionStorage', 'formService',
   function ($q, $mdToast, $mdBottomSheet, $mdSidenav, $timeout, $mdDialog, $rootScope, $scope, $state, $sessionStorage, formService){
 
+    console.log("Module form loaded");
+
     $scope.country;
 
     $scope.countries = ['Denmark',"Finland","Norway","Sweden"];

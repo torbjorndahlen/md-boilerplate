@@ -6,6 +6,8 @@
   .controller('viewController', ['$mdToast', '$mdBottomSheet', '$mdSidenav', '$timeout', '$mdDialog','$rootScope', '$scope', '$state', '$sessionStorage', 'viewService',
   function ($mdToast, $mdBottomSheet, $mdSidenav, $timeout, $mdDialog, $rootScope, $scope, $state, $sessionStorage, viewService){
 
+    console.log("Module view loaded");
+
     // Decide which elements to show
     $scope.showToolbar = true;
     $scope.showSidenav = false;
@@ -16,6 +18,7 @@
     $scope.showForm = false;
     // Will never be shown
     $scope.showPush = false;
+    $scope.showSync = false;
 
     $scope.toolbarButton = function(event) {
 

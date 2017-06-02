@@ -123,6 +123,11 @@ boilerplate:
 - Register the device with the Push Notification Service. For iOS this requires an SSL certificate for APS. See [Aerogear for iOS](https://aerogear.org/docs/unifiedpush/aerogear-push-ios/)
 - Go to the Push menu in AppStudio and upload your credentials in order to register the app for push notifications
 
+## RHMAP Sync module
+The md-boilerplate can also be used to include the `$fh.sync`API into an AngularJS app.
+The sync initialization is located in the `sync` module under `public/js/sync` and consists
+of a controller without a view that will register the app for using RHMAP's sync service.
+The sync data can then be included and displayed in other modules.
 
 ## Deploy on RHMAP
 To deploy the boilerplate on RHMAP do the following steps:

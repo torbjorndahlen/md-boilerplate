@@ -6,6 +6,7 @@
   .controller('analyticsController', ['$mdToast', '$mdBottomSheet', '$mdSidenav', '$window', '$document', '$timeout', '$mdDialog','$rootScope', '$scope', '$state', '$sessionStorage', 'analyticsService',
   function ($mdToast, $mdBottomSheet, $mdSidenav, $window, $document, $timeout, $mdDialog, $rootScope, $scope, $state, $sessionStorage, analyticsService){
 
+    console.log("Module analytics loaded");
 
     $scope.items = [
       { name: 'item1', icon: 'img/ic_chat_24px.svg', what: 'what1', notes: 'notes1', action1: 'action1', action2: 'action2' },

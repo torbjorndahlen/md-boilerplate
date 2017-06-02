@@ -9,7 +9,8 @@ var cmsapp = angular.module('md-boilerplate', [
   'toolbar',
   'form',
   'view',
-  'push'
+  'push',
+  'sync'
 ]);
 
 cmsapp.config(function($mdThemingProvider) {
@@ -64,6 +65,10 @@ cmsapp.config(function($stateProvider, $urlRouterProvider){
          'push@view': {
            templateUrl: "js/push/push.html",
            controller: "pushController"
+         },
+         'sync@view': {
+           templateUrl: "js/sync/sync.html",
+           controller: "syncController"
          }
        }
 

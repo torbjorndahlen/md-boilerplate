@@ -6,6 +6,7 @@
   .controller('toolbarController', ['$mdToast', '$mdBottomSheet', '$mdSidenav', '$timeout', '$mdDialog','$rootScope', '$scope', '$state', '$sessionStorage', 'toolbarService',
   function ($mdToast, $mdBottomSheet, $mdSidenav, $timeout, $mdDialog, $rootScope, $scope, $state, $sessionStorage, toolbarService){
 
+    console.log("Module toolbar loaded");
 
   $scope.doPrimaryAction = function(event) {
 

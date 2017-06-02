@@ -6,6 +6,8 @@
   .controller('pushController', ['$mdToast', '$mdBottomSheet', '$mdSidenav', '$timeout', '$mdDialog','$rootScope', '$scope', '$state', '$sessionStorage', 'pushService',
   function ($mdToast, $mdBottomSheet, $mdSidenav, $timeout, $mdDialog, $rootScope, $scope, $state, $sessionStorage, pushService){
 
+    console.log("Module push loaded");
+
     if($sessionStorage.push === undefined) {
 
       // register with the server to start receiving push notifications
