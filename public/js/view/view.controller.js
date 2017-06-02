@@ -14,6 +14,8 @@
     $scope.showCard = true;
     $scope.showList = false;
     $scope.showForm = false;
+    // Will never be shown
+    $scope.showPush = false;
 
     $scope.toolbarButton = function(event) {
 

@@ -11,7 +11,7 @@ Green: Sidenav
 Magenta: Analytics
 Yellow: Card, List, Form - These are mutually exclusive.
 ```
-To remove the borders simply change the border-style from `solid` to `none` in `styles.css`. 
+To remove the borders simply change the border-style from `solid` to `none` in `styles.css`.
 The different components can be shown or hidden by changing a corresponding scope variable in `view.controller.js`.
 This simplifies debugging problems in the layout.
 
@@ -109,6 +109,13 @@ or with a form:
 After removing borders:
 
 ![alt text](./img/no-borders-ipad.png "No borders")
+
+
+## Adding RHMAP SDK modules into a Cordova/AngularJS App
+The md-boilerplate can also be used to add RHMAP SDK modules into a Cordova/AngularJS app.
+Simply using a module with a corresponding controller for each RHMAP module, for example
+js/push/push.controller.js. The controller will initialize the RHMAP module when the
+parent scope is loaded.
 
 ## Deploy on RHMAP
 To deploy the boilerplate on RHMAP do the following steps:

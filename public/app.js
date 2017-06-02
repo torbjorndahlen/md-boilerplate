@@ -8,7 +8,8 @@ var cmsapp = angular.module('md-boilerplate', [
   'analytics',
   'toolbar',
   'form',
-  'view'
+  'view',
+  'push'
 ]);
 
 cmsapp.config(function($mdThemingProvider) {
@@ -59,6 +60,10 @@ cmsapp.config(function($stateProvider, $urlRouterProvider){
          'form@view': {
            templateUrl: "js/form/form.html",
            controller: "formController"
+         },
+         'push@view': {
+           templateUrl: "js/push/push.html",
+           controller: "pushController"
          }
        }
 
