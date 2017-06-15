@@ -8,6 +8,17 @@ angular
 
     var service = {};
 
+    service.m_data = [];
+
+
+    service.putData = function(data) {
+      service.m_data = data;
+    }
+
+    service.getData = function() {
+      return service.m_data;
+    }
+
     return service;
 }]);
 })();

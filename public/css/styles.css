@@ -2,49 +2,49 @@
 * For debugging
 */
 .mdb-element-r {
-  border-style:solid;
+  border-style:none;
   border-color: #ff0000;
   border-width: 1px;
 }
 
 .mdb-element-g {
-  border-style:solid;
+  border-style:none;
   border-color: #00ff00;
   border-width: 1px;
 }
 
 .mdb-element-b {
-  border-style:solid;
+  border-style:none;
   border-color: #0000ff;
   border-width: 1px;
 }
 
 .mdb-element-y {
-  border-style:solid;
+  border-style:none;
   border-color: #ffff00;
   border-width: 1px;
 }
 
 .mdb-element-t {
-  border-style:solid;
+  border-style:none;
   border-color: #00ffff;
   border-width: 1px;
 }
 
 .mdb-element-m {
-  border-style:solid;
+  border-style:none;
   border-color: #ff00ff;
   border-width: 1px;
 }
 
 .mdb-element-dg {
-  border-style:solid;
+  border-style:none;
   border-color: #003300;
   border-width: 1px;
 }
 
 .mdb-element-dp {
-  border-style:solid;
+  border-style:none;
   border-color: #000099;
   border-width: 1px;
 }

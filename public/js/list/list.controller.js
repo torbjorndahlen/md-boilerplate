@@ -3,8 +3,8 @@
 
   angular
   .module('list')
-  .controller('listController', ['$mdToast', '$mdBottomSheet', '$mdSidenav', '$timeout', '$mdDialog','$rootScope', '$scope', '$state', '$sessionStorage', 'listService',
-  function ($mdToast, $mdBottomSheet, $mdSidenav, $timeout, $mdDialog, $rootScope, $scope, $state, $sessionStorage, listService){
+  .controller('listController', ['$mdToast', '$mdBottomSheet', '$mdSidenav', '$timeout', '$mdDialog','$rootScope', '$scope', '$state', '$sessionStorage', 'listService','syncService',
+  function ($mdToast, $mdBottomSheet, $mdSidenav, $timeout, $mdDialog, $rootScope, $scope, $state, $sessionStorage, listService, syncService){
 
     console.log("Module list loaded");
 
@@ -20,6 +20,14 @@
       { name: 'item9', icon: 'img/ic_chat_24px.svg', what: 'what9', notes: 'notes9' },
       { name: 'item10', icon: 'img/ic_chat_24px.svg', what: 'what10', notes: 'notes10' }
     ];
+    
+
+
+    // Subscribe to new data returned from the sync service
+    $scope.$on('sync', function (event, data) {
+      $scope.items = syncService.getData();
+      $scope.$apply();
+    });
 
 
 

@@ -3,16 +3,15 @@
 
   angular
   .module('sync')
-  .controller('syncController', ['$scope', '$state', '$sessionStorage', 'syncService',
-  function ($scope, $state, $sessionStorage, syncService){
+  .controller('syncController', ['$rootScope', '$scope', '$state', '$sessionStorage', 'syncService',
+  function ($rootScope, $scope, $state, $sessionStorage, syncService){
 
     console.log("Module sync loaded");
 
     var datasetId = "SyncData";
-    $scope.syncData = [];
 
     $fh.sync.init({
-      "do_console_log" : true,
+      "do_console_log" : false,
       "storage_strategy" : "dom"
     });
 
@@ -26,7 +25,7 @@
         $fh.sync.doList(datasetId,
           function(res){
 
-            $scope.syncData = []; // Clear sync data to avoid duplicates
+            var dataList = [];
             //res is a JSON object
             for(var key in res){
               if(res.hasOwnProperty(key)){
@@ -35,13 +34,20 @@
                 // Record data, opaque to sync service.
                 var data = res[key].data;
                 data.uid = uid;
-                $scope.syncData.push(data);
+
+                //$scope.syncData.push(data);
+                dataList.push(data);
+
                 // Unique hash value for this record
                 var hash = res[key].hash;
               }
             }
-            //$scope.$apply();
-            $sessionStorage.syncData = $scope.syncData; // Make sync data available to other modules
+
+            // Make data available to other controllers
+            syncService.putData(dataList);
+            // Announce new data is available to other controllers
+            $rootScope.$broadcast('sync');
+
           },
           function(code, msg){
             console.log("error: " + code + ' : ' + msg);
@@ -54,6 +60,19 @@
       }
     });
 
+
+    // Create initial persistent document in the managed dataset (for demo purpose only)
+    var item = { name: 'item1', icon: 'img/ic_chat_24px.svg', what: 'what1', notes: 'notes1' };
+
+    $fh.sync.doCreate(datasetId, item, function(res) {
+      // The update record which will be sent to the cloud
+      console.log(res);
+    }, function(code, msg) {
+      // Error code. One of 'unknown_dataset' or 'unknown_id'
+      console.error(code);
+      // Optional free text message with additional information
+      console.error(msg);
+    });
 
 
   }]);

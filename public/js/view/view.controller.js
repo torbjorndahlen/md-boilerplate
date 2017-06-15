@@ -10,8 +10,8 @@
 
     // Decide which elements to show
     $scope.showToolbar = true;
-    $scope.showSidenav = false;
-    $scope.showAnalytics = false;
+    $scope.showSidenav = true;
+    $scope.showAnalytics = true;
     // The below are mutually exclusive
     $scope.showCard = true;
     $scope.showList = false;

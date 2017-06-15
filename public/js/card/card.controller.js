@@ -3,8 +3,8 @@
 
   angular
   .module('card')
-  .controller('cardController', ['$mdToast', '$mdBottomSheet', '$mdSidenav', '$timeout', '$mdDialog','$rootScope', '$scope', '$state', '$sessionStorage', 'cardService',
-  function ($mdToast, $mdBottomSheet, $mdSidenav, $timeout, $mdDialog, $rootScope, $scope, $state, $sessionStorage, cardService){
+  .controller('cardController', ['$mdToast', '$mdBottomSheet', '$mdSidenav', '$timeout', '$mdDialog','$rootScope', '$scope', '$state', '$sessionStorage', 'cardService', 'syncService',
+  function ($mdToast, $mdBottomSheet, $mdSidenav, $timeout, $mdDialog, $rootScope, $scope, $state, $sessionStorage, cardService, syncService){
 
     console.log("Module card loaded");
 
@@ -21,7 +21,11 @@
       { name: 'item10', icon: 'img/ic_chat_24px.svg', what: 'what10', notes: 'notes10', action1: 'action1', action2: 'action2' }
     ];
 
-
+    // Subscribe to new data returned from the sync service
+    $scope.$on('sync', function (event, data) {
+      $scope.items = syncService.getData();
+      $scope.$apply();
+    });
 
   $scope.doPrimaryAction = function(event, caller) {
     console.log(JSON.stringify(caller));
