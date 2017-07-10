@@ -33,7 +33,7 @@
         .targetEvent(event)
       );
 
-    }
+    };
 
 
 

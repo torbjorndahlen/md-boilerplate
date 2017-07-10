@@ -8,10 +8,10 @@
 
     console.log("Module form loaded");
 
-    $scope.country;
+    $scope.country = null;
 
     $scope.countries = ['Denmark',"Finland","Norway","Sweden"];
-    $scope.selectedCountry;
+    $scope.selectedCountry = null;
     $scope.getSelectedCustomerCountry = function() {
       if ($scope.selectedCountry !== undefined) {
         $scope.country = $scope.selectedCountry;
@@ -46,7 +46,7 @@
           $timeout(function () {
             deferred.resolve( results );
             console.log($scope.selectedItem);
-            if($scope.selectedItem != null && $scope.selectedItem.value === "660410") {
+            if($scope.selectedItem !== null && $scope.selectedItem.value === "660410") {
             $scope.name = "Torbjörn Dahlén";
             $scope.mobile = 1234567;
             $scope.phone = 1234567;
@@ -102,7 +102,7 @@
             .ok('Awesome!')
             .targetEvent(event)
           );
-        }
+        };
 
         $scope.back = function() {
           // go back to previous state
@@ -114,7 +114,7 @@
             .ok('Awesome!')
             .targetEvent(event)
           );
-        }
+        };
 
         $scope.submit = function() {
           // go back to previous state
@@ -126,7 +126,7 @@
             .ok('Awesome!')
             .targetEvent(event)
           );
-        }
+        };
 
         $scope.cancel = function() {
           // go back to previous state
@@ -138,7 +138,7 @@
             .ok('Awesome!')
             .targetEvent(event)
           );
-        }
+        };
 
   }]);
 })();

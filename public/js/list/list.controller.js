@@ -20,7 +20,7 @@
       { name: 'item9', icon: 'img/ic_chat_24px.svg', what: 'what9', notes: 'notes9' },
       { name: 'item10', icon: 'img/ic_chat_24px.svg', what: 'what10', notes: 'notes10' }
     ];
-    
+
 
 
     // Subscribe to new data returned from the sync service
@@ -42,7 +42,7 @@
             .ok('Awesome!')
             .targetEvent(event)
           );
-        }
+        };
 
 
 

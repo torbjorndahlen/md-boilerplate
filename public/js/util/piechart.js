@@ -11,13 +11,14 @@ ctx.moveTo(centerX,centerY);
 ctx.arc(centerX, centerY, radius, startAngle, endAngle);
 ctx.closePath();
 ctx.fill();
-}
+};
 
 this.draw = function(){
     var total_value = 0;
     var color_index = 0;
+    var val = 0;
     for (var categ in this.options.data){
-        var val = this.options.data[categ];
+        val = this.options.data[categ];
         total_value += val;
     }
 
@@ -54,5 +55,5 @@ this.draw = function(){
         );
     }
 
-}
-}
+};
+};

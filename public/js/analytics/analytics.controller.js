@@ -102,7 +102,7 @@ $scope.myPiechart2.draw();
             .ok('Awesome!')
             .targetEvent(event)
           );
-        }
+        };
 
 
 

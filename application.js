@@ -107,7 +107,7 @@ var globalRequestInterceptor = function(dataset_id, params, cb) {
   // This (string) response will be returned to the client, so
   // don't leak any security information.
   return cb(null);
-}
+};
 
 $fh.sync.globalInterceptRequest(globalRequestInterceptor);
 
@@ -127,7 +127,7 @@ var validateCookie = function (req, res, next) {
     next();
   }
 
-}
+};
 
 //
 // ping
@@ -143,30 +143,6 @@ app.get('/api/ping', function (req, res) {
     console.log('\n\n=========REQUEST END===============');
 });
 
-
-//
-// LOGIN API
-//
-/*
-app.post('/api/login', jsonParser, function(req, res) {
-
-  console.log('\n\n===========REQUEST===============');
-  console.log('\n\n/POST /api/login ' + JSON.stringify(req.body));
-
-  loginController.authenticate(req.body, function(results){
-
-    if(!results) {
-      res.statusCode = 401;
-      res.send('Fel användarnamn/lösenord');
-    } else {
-      res.cookie("rhmap" , "1111", {maxAge : 30 * 60 * 1000});
-      res.json(results);
-    }
-  });
-
-  console.log('\n\n=========REQUEST END===============');
-});
-*/
 
 
 

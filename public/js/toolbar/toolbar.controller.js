@@ -18,7 +18,7 @@
             .ok('Awesome!')
             .targetEvent(event)
           );
-        }
+        };
 
 
 

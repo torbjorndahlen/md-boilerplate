@@ -38,7 +38,7 @@
             .ok('Awesome!')
             .targetEvent(event)
           );
-        }
+        };
 
 
 
