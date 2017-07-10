@@ -29,7 +29,6 @@ SOFTWARE OR THE USE OR OTHER DEALINGS IN THE SOFTWARE.
 
 var express = require('express');
 var bodyParser = require('body-parser');
-var cookieParser = require('cookie-parser');
 
 // RHMAP compatibility
 //var mbaasApi = require('fh-mbaas-api');
@@ -61,9 +60,6 @@ app.use(express.static(__dirname + '/public'));
 var jsonParser = bodyParser.json({limit: '50mb'});
 app.use(bodyParser.urlencoded({limit: "50mb", extended: true, parameterLimit: 50000}));
 
-// Create a cookie parser
-app.use(cookieParser());
-
 
 app.use(function(req, res, next) {
 
@@ -73,13 +69,6 @@ app.use(function(req, res, next) {
   next();
 
 });
-
-
-// Controllers
-//var registerController = require("./server/controller/RegisterController");
-//var lookupController = require("./server/controller/LookupController");
-//var loginController = require("./server/controller/LoginController");
-
 
 // RHMAP compatibility
 // Note: important that this is added just before your own Routes
@@ -111,23 +100,6 @@ var globalRequestInterceptor = function(dataset_id, params, cb) {
 
 $fh.sync.globalInterceptRequest(globalRequestInterceptor);
 
-
-// Cookie validation
-var validateCookie = function (req, res, next) {
-  console.log("\n\nvalidateCookie()");
-  // TODO store cookie in DB
-  // TODO refresh cookie timeout on each request
-  if(req.cookies.rhmap !== "1111") {
-    console.log("\nMissing cookie");
-  //  res.statusCode = 401;
-  //  return res.send('Användaren är inte inloggad');
-    next();
-  } else {
-    console.log("\nCookie check ok");
-    next();
-  }
-
-};
 
 //
 // ping
