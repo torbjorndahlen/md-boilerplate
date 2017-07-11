@@ -8,15 +8,6 @@ angular
 
     var service = {};
 
-    service.startProcess = function (loginName) {
-      var dto = {
-        "username": loginName
-      };
-
-      return FHCloud.post('api/process', dto);
-    };
-
-
     return service;
 }]);
 })();
